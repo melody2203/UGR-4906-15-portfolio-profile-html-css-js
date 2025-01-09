@@ -4,38 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
     <header>
       <div class="logo">My Portfolio</div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
       </nav>
-      <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+        <img src="./images/free_icon_1.svg" alt="hamburger" />
       </div>
     </header>
     <section id="portfolio">
       <h2>My Work</h2>
       <div class="portfolio-grid">
+        <!-- Project 1 -->
         <div class="project">
           <div class="image-container">
             <img src="images/project1.jpg" alt="Project 1" />
           </div>
           <h3>Cafe menu</h3>
           <p>
-            This is my first html and css project I've worked on my freeCode
+            This is my first HTML and CSS project I've worked on my freeCode
             camp learning journey.
           </p>
           <button class="see-more">See More</button>
         </div>
 
+        <!-- Project 2 -->
         <div class="project">
           <div class="image-container">
             <img src="images/project2.jpg" alt="Project 2" />
@@ -48,6 +50,7 @@
           <button class="see-more">See More</button>
         </div>
 
+        <!-- Project 3 -->
         <div class="project">
           <div class="image-container">
             <img src="images/project3.jpg" alt="Project 3" />
@@ -61,5 +64,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>

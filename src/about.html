@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
     <header>
       <div class="logo">My Portfolio</div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <nav id="nav-links" class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
       </nav>
-      <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+        <img src="./images/free_icon_1.svg" alt="hamburger" />
       </div>
     </header>
+
     <section id="about">
       <h2>About Me</h2>
       <div class="about-content">
-        <img src="images/backg.png" alt="Profile Picture" />
+        <div>
+          <img src="images/backg.png" alt="Profile Picture" />
+        </div>
         <p>
           Hi, I'm Merertu Philipose. I'm a web designer and developer with a
           passion for creating beautiful, functional websites. I am now pursuing
@@ -37,29 +40,18 @@
           several fascinating projects and partnerships along the way, all of
           which have improved and developed my skill.<br />
           When I'm not working, you can probably find me taking pictures of
-          nature, playing guitar, or sketching new designs. I also have a strong
-          passion for technology and am always experimenting with new tools,
-          frameworks, and ideas that can help me improve my work, whether it's
-          learning a new programming language, researching design trends, or
-          testing out the newest technology.<br />
-          Outside of the screen, I enjoy the excitement of exploration and
-          adventure. Hiking in beautiful settings, seeing new locations, or
-          sampling unusual foods are all ways that I enjoy exposing myself to
-          diverse viewpoints and experiences. This attitude of adventure
-          inspires me and keeps my mind open to new ideas in both my
-          professional and personal life. I'm constantly thrilled to meet
-          like-minded individuals, work with them on motivational initiatives,
-          or investigate new prospects. Let's work together to build something
-          incredible!
+          nature, playing guitar, or sketching new designs.
         </p>
-
+        <!-- Add audio player here -->
         <audio controls>
           <source src="audio/audio.mp3" />
+          Your browser does not support the audio element.
         </audio>
       </div>
 
       <button onclick="downloadCV()">Download CV</button>
 
+      <!-- Skills Table -->
       <table>
         <caption>
           Key Skills
@@ -86,5 +78,6 @@
         </tr>
       </table>
     </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>

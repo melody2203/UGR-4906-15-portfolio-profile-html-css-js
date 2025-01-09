@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/layout.css" />
+    <title>Personal Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">My Portfolio</div>
+      <nav id="nav-links" class="nav-links">
+        <a href="./src/index.html">Home</a>
+        <a href="./src/about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+        <img src="./images/free_icon_1.svg" alt="hamburger" />
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>Merertu Philipose <br />| Designer & Developer</h1>
+      <p>Crafting digital experiences with creativity and precision.</p>
+      <button onclick="scrollToPortfolio()">View My Work</button>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
